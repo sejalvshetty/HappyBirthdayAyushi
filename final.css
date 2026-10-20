@@ -1,0 +1,191 @@
+body{
+
+    margin:0;
+    min-height:100vh;
+
+    background:#d1a0ae;
+
+    font-family:'Parisienne', cursive;
+
+    overflow-x:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+}
+
+/* MAIN CONTENT */
+
+.container{
+
+    width:80%;
+    max-width:1000px;
+
+    padding:40px;
+
+}
+
+h1{
+
+    color:rgb(95, 1, 45);
+
+    font-size:65px;
+
+    font-weight:normal;
+
+    margin:20px 0;
+
+}
+
+h2{
+
+    color:rgb(130, 0, 61);
+
+    font-size:30px;
+
+    font-weight:normal;
+
+    margin:25px 0;
+
+}
+
+p{
+
+    color:rgb(130, 0, 61);
+
+    font-size:34px;
+
+    line-height:1.8;
+
+}
+
+/* TOP DECORATION */
+
+.hearts{
+
+    position:absolute;
+
+    top:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:30px;
+
+    color:rgb(130, 0, 61);
+
+}
+
+/* CAKE IMAGE */
+
+#cake{
+
+    width:220px;
+
+    display:block;
+
+    margin:30px auto;
+
+    opacity:0;
+
+    transition:2s;
+
+}
+
+/* FINAL MESSAGE */
+
+#finalMessage{
+
+    opacity:0;
+
+    transition:3s;
+
+}
+
+/* FLOATING STICKERS */
+
+.sticker{
+
+    position:absolute;
+
+    font-size:35px;
+
+    animation:floatSticker 4s ease-in-out infinite;
+
+}
+
+/* LEFT SIDE */
+
+.s1{
+top:10%;
+left:5%;
+}
+
+.s2{
+top:25%;
+left:8%;
+}
+
+.s3{
+top:45%;
+left:4%;
+}
+
+.s4{
+top:65%;
+left:7%;
+}
+
+.s5{
+top:85%;
+left:5%;
+}
+
+/* RIGHT SIDE */
+
+.s6{
+top:10%;
+right:5%;
+}
+
+.s7{
+top:30%;
+right:8%;
+}
+
+.s8{
+top:50%;
+right:5%;
+}
+
+.s9{
+top:70%;
+right:7%;
+}
+
+.s10{
+top:85%;
+right:5%;
+}
+
+/* ANIMATION */
+
+@keyframes floatSticker{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}

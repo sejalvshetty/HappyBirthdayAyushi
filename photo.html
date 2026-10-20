@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Our Memories 💖</title>
+
+ <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="5 memories.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<h1> Wall of Fame 💕</h1>
+
+<p class="subtitle">
+Click each picture 💌
+</p>
+
+<div class="gallery">
+
+<img src="pic.jpeg" class="photo p1"
+onclick="showNote('Pretty looks good on you, birthday girl 💖')">
+
+<img src="pic1.jpeg" class="photo p2"
+onclick="showNote('Tumhari yeh adaayein bhi na... 🫠💕')">
+
+<img src="pic2.jpeg" class="photo p3"
+onclick="showNote('Main character energy, always!! 💖')">
+
+<img src="pic3.jpeg" class="photo p4"
+onclick="showNote('Nazrien bhi tumpe, tareef bhi tumhari. 💖')">
+
+<img src="pic4.jpeg" class="photo p5"
+onclick="showNote('Forget princesses. This picture proves you were born as apsara. ✨🌸')">
+
+<img src="pic5.jpeg" class="photo p6"
+onclick="showNote('The grace, the confidence, the elegance...You look absolutely beautiful here, and I don\'t think any words can do this picture justice. 🌸💕')">
+
+<img src="pic6.jpeg" class="photo p7"
+onclick="showNote('Tumhari muskaan ne toh mera dil chhoo liya 💖')">
+
+<img src="pic7.jpeg" class="photo p8"
+onclick="showNote('You are the reason I believe in magic. 💖')">
+
+<img src="pic8.jpeg" class="photo p9"
+onclick="showNote('Janamdin mubarak!! 🌸💖')">
+
+<img src="pic9.jpeg" class="photo p10"
+onclick="showNote('Thanks for being a part of so many of my favourite memories! I can\'t wait to make many more with you. 💖')">
+
+</div>
+
+<div id="popup">
+
+<div id="popupContent">
+
+<span onclick="closeNote()">✖</span>
+
+<p id="noteText"></p>
+
+</div>
+
+</div>
+
+<button class="next"
+onclick="location.href='final.html'">
+
+One Last Thing 💖
+
+</button>
+
+<script>
+
+function showNote(note){
+
+document.getElementById("popup").style.display="flex";
+
+document.getElementById("noteText").innerHTML=note;
+
+}
+
+function closeNote(){
+
+document.getElementById("popup").style.display="none";
+
+}
+
+</script>
+
+</body>
+
+</html>

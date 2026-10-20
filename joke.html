@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Do You Love Me?</title>
+     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="3 love.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Do You Love Me? 🥺💖</h1>
+
+    <div class="buttons">
+
+        <button onclick="location.href='4 reveal.html'">
+            YES 💕
+        </button>
+
+        <button id="noBtn">
+            NO 😤
+        </button>
+
+    </div>
+
+    <p id="message"></p>
+
+</div>
+
+<script>
+
+const noBtn = document.getElementById("noBtn");
+const message = document.getElementById("message");
+
+let count = 0;
+
+noBtn.addEventListener("click", () => {
+
+    count++;
+
+    if(count == 1){
+        message.innerHTML = "Oh no... my heart just cracked 😭";
+    }
+
+    else if(count == 2){
+        message.innerHTML = "Are you really sure? 🥺";
+    }
+
+    else if(count == 3){
+        message.innerHTML = "Wrong answer detected 🚨";
+    }
+
+    else{
+        noBtn.style.position = "absolute";
+        noBtn.style.left = Math.random()*80 + "%";
+        noBtn.style.top = Math.random()*80 + "%";
+    }
+
+});
+
+</script>
+
+</body>
+
+</html>
